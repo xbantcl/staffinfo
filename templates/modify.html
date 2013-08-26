@@ -1,0 +1,18 @@
+{% extends "head.html" %}
+{% block body %}
+<div id="fix_bar">
+<form name="modify_data" action="{{ url_for('action') }}" method=post>
+<table class="fix-table">
+{% for key,value in user_info.items() %}
+  <tr>
+    <td><label>{{key}}</label></td>
+    <td><input type="text" name="{{key}}" size=30 value="{{ value }}" /></td>
+  </tr>
+{% endfor %}
+</table>
+<input type="hidden" name="userid" value="{{userid}}"/> 
+<input type="hidden" name="action" value="modify"/> 
+<input class="button2" name="modify" type="submit" value="modify">
+</form>
+</div>
+{% endblock %}

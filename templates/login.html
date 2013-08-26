@@ -1,0 +1,19 @@
+{% extends "head.html" %}
+{% block body %}
+<form name="login" action="{{ url_for('login') }}" method=post>
+<div id="login">
+{% if error %}<p class="error"><strong>Error:</strong> {{ error }}{% endif %}
+<table class="login-table">
+  <tr>
+    <td><label>Username</label></td>
+    <td><input type="text" name="username" size=30em /></td>
+  </tr>
+  <tr>
+    <td><label>Password</label></td>
+    <td><input type="password" name="password" size=30em /></td>
+  </tr>
+</table>
+<input name="login" class="button2" type="submit" value="login in" />
+</div>
+</form>
+{% endblock %}

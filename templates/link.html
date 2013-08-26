@@ -1,0 +1,88 @@
+{% extends "head.html" %}
+{% block body %}
+<div id="search">
+<table>
+  <tr>
+	<td><a href="{{ url_for('linked', value='A') }}">A</a></a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='B') }}">B</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='C') }}">C</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='D') }}">D</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='E') }}">E</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='F') }}">F</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='G') }}">G</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='H') }}">H</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='I') }}">I</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='J') }}">J</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='K') }}">K</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='L') }}">L</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='M') }}">M</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='N') }}">N</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='O') }}">O</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='P') }}">P</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='Q') }}">Q</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='R') }}">R</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='S') }}">S</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='T') }}">T</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='U') }}">U</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='V') }}">V</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='W') }}">W</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='X') }}">X</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='Y') }}">Y</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='Z') }}">Z</a></td>
+  </tr>
+</table>
+</div>
+{% if "no" != result %}
+<div id="linke-head">
+    <table class="head-table">
+        <tr>
+            <th class='t1'>Username</th>
+            <th class='t2'>Pingyin</th>
+            <th class='t3'>Email</th>
+            <th class='t4'>Office</th>
+            {% if session.get('login_in') %}
+            <th class='t5'>Mobile</th>
+            {% endif %}
+            <th class='t6'>Team</th>
+        </tr>
+        <tr><td class='t7'></td></tr>
+        {% for row in result %}
+        <tr>
+            {% for value in row  %}
+            <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% else %}
+<div id="linke-head">
+<p class="no-message"><em>No user information!</em></p>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "head.html" %}
+{% block body %}
+<div id="fix_bar">
+<form name="add_data" action="{{ url_for('action') }}" method=post>
+<table class="fix-table">
+  <tr>
+    <td><label>Username</label></td>
+    <td><input type="text" name="Username" size=30 /></td>
+  </tr>
+  <tr>
+    <td><label>Pingyin</label></td>
+    <td><input type="text" name="Pingyin" size=30 /></td>
+  </tr>
+  <tr>
+    <td><label>Email</label></td>
+    <td><input type="text" name="Email" size=30 /></td>
+  </tr>
+  <tr>
+    <td><label>Office</label></td>
+    <td><input type="text" name="Office" size=30 /></td>
+  </tr>
+  <tr>
+    <td><label>Mobile</label></td>
+    <td><input type="text" name="Mobile" size=30 /></td>
+  </tr>
+  <tr>
+    <td><label>Team</label></td>
+    <td><input type="text" name="Team" size=30 /></td>
+  </tr>
+</table>
+<input type="hidden" name="action" value="add" />
+<input name="add" class="button2" type="submit" value="添加">
+</form>
+</div>
+{% endblock %}

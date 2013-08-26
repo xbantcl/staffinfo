@@ -1,0 +1,31 @@
+{% extends "head.html" %}
+{% block body %}
+<div>
+{% if result %}
+<div id="data-head">
+	<table class="head-table">
+		<tr>
+            <th class='t0' colspan="2">Action</th>
+			<th class='t1'>Username</th>
+			<th class='t2'>Pingyin</th>
+			<th class='t3'>Email</th>
+			<th class='t4'>Office</th>
+			<th class='t5'>Mobile</th>
+			<th class='t6'>Team</th>
+		</tr>
+		<tr><td class='t7'></td></tr>
+		{% for line in result %}
+		<tr>
+            <td><a href="{{ url_for('action', types='modify', id=line[0])}}">修改<img src="{{ url_for('static', filename='images/modify.png') }}"/></a></td>
+            <td><a href="{{ url_for('action', types='delete', id=line[0])}}">删除<img src="{{ url_for('static', filename='images/delete.png') }}"/></a></td>
+			{% for i in [1,2,3,4,5,6]  %}
+			<td class="{{i}}">{{ line[i] }}</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</table>
+	<a class="button1" href="{{ url_for('action', types='add') }}"><span>添加</span></a>
+</div>
+{% endif %}
+</div>
+{% endblock %}

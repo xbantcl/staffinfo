@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    color: #CC6633;
+}
+
+a.login {
+    color: green;
+}
+
+a.index {
+    float: left;
+    color: green;
+}
+
+#title {
+    font-size: 3em;
+    text-align: center;
+    color: #ff9900;
+}
+
+#header {
+    text-align: right;
+    margin: 0.5em auto;
+    border: 1px solid #ccc;
+    width: 60em;
+    padding: 0.4em;
+    background: #ccc;
+}
+
+#search {
+    margin: 2em auto;
+    width: 55em;
+}
+
+#content {
+    margin: 4em auto;
+	margin-bottom: 2em;
+    width: 40em;
+    text-align: center;
+}
+
+#content input {
+	height: 25px; 
+	color: #ccc;
+}
+
+.format {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    width: 1em;
+}
+
+.content-table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+
+.content-table tr.style1 {
+    background: #CCC;
+}
+
+.content-table td {
+    border: 1px solid silver;
+    padding: 1em;
+}
+
+#footer {
+    margin: 5em;
+    padding-top: 5em;
+}
+
+#footer .line {
+    height: 0.1em;
+    background: #ccc;
+}
+
+#footer p {
+    text-align: right;
+}
+
+#login {
+    margin: 5em auto;
+    width: 40em;
+    text-align: center;
+}
+
+.login-table {
+    border-collapse: collapse;
+    border: 1px solid gray;
+    margin: auto;
+}
+
+.login-table td {
+    border: 1px solid silver;
+    padding: 1em;
+    background: #666600;
+}
+
+.login-table input {
+    height: 25px;
+    background: gray;
+}
+
+.button {
+    margin: 2em;
+    padding: 0.2em;
+    margin-left: 20em;
+}
+
+.error {
+    margin: auto;
+}
+
+/*******admin********/
+
+#data-head {
+	margin: 1em auto;
+	width: 60em;
+}
+
+.head-table {
+	border-collapse: collapse;
+    margin: auto;
+}
+.head-table td {
+	padding: 0.2em;
+	text-align: center;
+	border: 1px solid gray;
+	background: #ccc;
+}
+
+.head-table th {
+	padding: 0.5em;
+	text-align: center;
+	border: 1px solid gray;
+	background: #ff9900;
+}
+.head-table th.t0 {
+	width: 15em;
+}
+
+.head-table th.t1 {
+	width: 6em;
+}
+
+.head-table th.t2 {
+	width: 8em;
+}
+
+.head-table th.t3 {
+	width: 12em;
+}
+
+.head-table th.t4 {
+	width: 4em;
+}
+
+.head-table th.t5 {
+	width: 5em;
+}
+
+.head-table th.t6 {
+	width: 6em;
+}
+
+.head-table td.t7 {
+    border: 0;
+    background: white;
+}
+
+#data {
+	margin: 2em auto;
+	width: 55em;
+}
+
+.data-table {
+ 	border-collapse: collapse;
+}
+
+.data-table td {
+	padding: 0.3em;
+	text-align: center;
+	border: 1px solid green;
+}
+
+/********modify style*************/
+
+#fix_bar {
+    margin: 2em auto;
+    width: 30em;
+    text-align: center;
+}
+
+.fix-table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.fix-table td {
+    text-align: center;
+    padding: 0.6em;
+    border: 1px solid green;
+    background: #ccc;
+}
+
+.fix-table td.tt {
+    background: #cccc;
+}
+
+.fix-table input {
+    height: 25px;
+}
+
+.button1 {
+	background: url('/static/images/button_a.gif') no-repeat;
+	color: #444;
+	display: block;
+	font: normal 15px arial, sans-serif;
+	height: 26px;
+    width: 2.8em;
+	margin-top: 1em;
+    margin-left: 30em;
+    margin-bottom: 16em;
+	padding-right: 16px;
+	text-decoration: none;
+}
+
+a.button1 span {
+	display: block;
+	#line-height: 14px;
+	padding: 3px 0 5px 12px;
+}
+
+.button2 {
+    background: url('/static/images/button_b.gif') no-repeat;
+    color: #444;
+    display: block;
+    margin-top: 10em;
+    padding: 6px 18px 5px 10px;
+}
+
+/******** linked *********/
+#linke-head {
+    margin: 2em auto;
+    width: 45em;
+    margin-bottom: 10em;
+}
+
+#linke-head .no-message {
+    margin: 6em auto;
+    width: 15em;
+    color: red;
+    font-size: 20px;
+}
+
+/**** button positon ****/
+input[name="login"] {
+    margin-top: 2em;
+    margin-left: 22em;
+    margin-bottom: 9em;
+}
+
+input[name="add"] {
+    margin-top: 2em;
+    margin-left: 22em;
+}
+
+input[name="modify"] {
+    margin-top: 1em;
+    margin-left: 22em;
+}
+
+input {
+    line-height: 160%;
+}

@@ -1,0 +1,81 @@
+{% extends "head.html" %}
+{% block body %}
+<div id="search">
+<table>
+  <tr>
+	<td><a href="{{ url_for('linked', value='A') }}">A</a></a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='B') }}">B</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='C') }}">C</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='D') }}">D</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='E') }}">E</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='F') }}">F</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='G') }}">G</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='H') }}">H</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='I') }}">I</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='J') }}">J</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='K') }}">K</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='L') }}">L</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='M') }}">M</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='N') }}">N</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='O') }}">O</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='P') }}">P</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='Q') }}">Q</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='R') }}">R</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='S') }}">S</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='T') }}">T</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='U') }}">U</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='V') }}">V</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='W') }}">W</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='X') }}">X</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='Y') }}">Y</a></td>
+    <td class="format">|</td>
+    <td><a href="{{ url_for('linked', value='Z') }}">Z</a></td>
+  </tr>
+</table>
+</div>
+<div id="content">
+  <table class="content-table">
+    <tr class="style1">
+      <td>Username</td>
+      <td><input type="text" name='username' id='username' size=35 value="安小波/anxiaobo" onfocus="onFocus(this)" onblur="onBlur(this)"/></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" name='email' id='email' size=35 value="xiaobo.an@tcl.com" onfocus="onFocus(this)" onblur="onBlur(this)"/></td>
+    </tr>
+    <tr>
+      <td>Team</td>
+      <td><input type="text" name='team' id='team' size=35 value="INT" onfocus="onFocus(this)" onblur="onBlur(this)"/></td>
+    </tr>
+    <tr class="style1">
+      <td>Extension</td>
+      <td><input type="text" name='extension' id='extension' size=35 align="middle" value="7425" onfocus="onFocus(this)" onblur="onBlur(this)"/></td>
+    </tr>
+  </table>
+</div>
+</div>
+{% endblock %}
